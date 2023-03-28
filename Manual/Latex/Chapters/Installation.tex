@@ -1,0 +1,211 @@
+\chapter{INSTALLATION}
+\thispagestyle{fancy}
+
+\section {SOFTWARE}
+
+In order to install software run the \textit{ \SetupFileName file}. Installation
+wizard will open. \\
+
+\textbf{Notice:} Installation should be run with administrator privileges.
+
+	\begin{figure}[!h] 
+	\centering \includegraphics[width=0.5\textwidth]{Graphic/Installation/install_run_as_administrator.png}	
+	\caption{Run install with administrator privileges}
+	\label{run_install_with_administrator_privileges}
+	\end{figure}
+	\FloatBarrier
+
+Follow the direction in the installation wizard.  
+
+\begin{enumerate}
+	\item Select destination location where should \textit{Quartz Monitor} be installed. \\
+	\begin{figure}[!h] 
+	\centering \includegraphics[width=0.7\textwidth]{Graphic/Installation/choose_location.png}	
+	\caption{Select location of software}
+	\label{select_location_of_software}
+	\end{figure}
+	\clearpage
+
+	\item Select additional shortcuts for application on desktop. \\
+	\begin{figure}[!h] 
+	\centering \includegraphics[width=0.7\textwidth]{Graphic/Installation/desktop_shortcut.png}	
+	\caption{Select additional shortcuts}
+	\label{select_additional_shortcuts}
+	\end{figure}
+	\FloatBarrier
+
+	\item Install application. \\
+	\begin{figure}[!h] 
+	\centering \includegraphics[width=0.7\textwidth]{Graphic/Installation/install.png}	
+	\caption{Ready to install}
+	\label{redy_to_install}
+	\end{figure}
+   \clearpage
+
+	\item Application install in progress. \\
+	\begin{figure}[!h] 
+	\centering \includegraphics[width=0.7\textwidth]{Graphic/Installation/install_in_progress.png}	
+	\caption{Install in progress}
+	\label{install_in_progress}
+	\end{figure}
+	\FloatBarrier
+
+	\item Install driver for USB. \\
+	\begin{figure}[!h] 
+	\centering \includegraphics[width=0.7\textwidth]{Graphic/Installation/Instal_driver_usb_exe.png}	
+	\caption{Install driver USB}
+	\label{install_in_progress}
+	\end{figure}
+	\FloatBarrier
+
+	\item Extract required files \\
+	\begin{figure}[!h] 
+	\centering \includegraphics[width=0.7\textwidth]{Graphic/Installation/extract_required_files_driver_usb.png}	
+	\caption{Extract required files for USB driver}
+	\label{install_in_progress}
+	\end{figure}
+	\FloatBarrier
+
+	\begin{figure}[!h] 
+	\centering \includegraphics[width=0.7\textwidth]{Graphic/Installation/finish_extract_driver_usb.png}	
+	\caption{Finished extract files driver USB}
+	\label{install_in_progress}
+	\end{figure}
+	\FloatBarrier
+
+	\newpage
+	\item License agreement \\
+	\begin{figure}[!h] 
+	\centering \includegraphics[width=0.7\textwidth]{Graphic/Installation/license_agreement.png}	
+	\caption{License agreement for Install  driver USB}
+	\label{install_in_progress}
+	\end{figure}
+	\FloatBarrier
+
+\item Install USB driver finished \\
+	\begin{figure}[!h] 
+	\centering \includegraphics[width=0.7\textwidth]{Graphic/Installation/finished_install_driver_usb.png}	
+	\caption{Install  driver USB finished}
+	\label{install_in_progress}
+	\end{figure}
+	\FloatBarrier
+
+\newpage
+	\item Install program finished. \\
+	\begin{figure}[!h] 
+	\centering \includegraphics[width=0.7\textwidth]{Graphic/Installation/complete_install.png}	
+	\caption{Install finished}
+	\label{install_finished}
+	\end{figure}
+	\FloatBarrier
+
+\end{enumerate}
+\newpage
+\section{DEVICE}
+
+Device installation is required when  \deviceName have hardware RS 232 / RS 485 / USB to communicate with computer.  Then to correctly communicate  \deviceName with software you should check:
+\begin{itemize}
+	\item if the USB drivers has been installed correctly (only in  case of USB hardware)
+	\item what is number of COM port
+\end{itemize}
+
+\subsection{USB DRIVER INSTALATION} \label{usb_driver_installation}
+
+To install drivers for USB hardware follow the steps below:
+
+\begin{enumerate}
+
+	\item Conect \deviceName to USB of computer
+
+	\item Open \textit{Device Manager} - in order to open window \textit{Device Manager} click right button of mouse in  \textit{Windows Start} and select \textit{Device Manager} with list which will be showed.
+
+	\begin{figure}[!h] 
+	\centering \includegraphics[width=0.45\textwidth]{Graphic/Installation/open_device_manager.png}	
+	\caption{Open device manager}
+	\label{open_device_manager}
+	\end{figure}
+	\FloatBarrier
+
+\item Check If drivers has been installed automatically - when driver has been installed automatically by system, in window\textit{Device Manager} section \textit{Ports (COM \& LPT)} you could found registration: \textit{USB Serial Port (COM x)}. That means, USB driver has been installed successfully.
+
+
+	\begin{figure}[!h] 
+	\centering \includegraphics[width=0.57\textwidth]{Graphic/Installation/driver_usb_installed.png}	
+	\caption{Driver USB installed}
+	\label{driver_USB_installed}
+	\end{figure}
+	\FloatBarrier
+
+	Otherwise you see exclamation mark beside not installed device. Then you have to install USB driver manually.
+
+	\begin{figure}[!h] 
+	\centering \includegraphics[width=0.57\textwidth]{Graphic/Installation/driver_usb_no_installed.png}	
+	\caption{Driver USB no installed}
+	\label{driver_USB_ no_installed}
+	\end{figure}
+	\FloatBarrier
+
+\item Install driver USB manually - in order to install driver USB manually follow the steps below. 
+	\begin{enumerate}
+		\item select USB device to install - select device to install driver by click right mouse button. From popup menu choose \textit{Update Driver Software}.
+
+		\begin{figure}[!h] 
+		\centering \includegraphics[width=0.7\textwidth]{Graphic/Installation/sellect_USB_device_to_install.png}	
+		\caption{Select USB device to install}
+		\label{select_USB_device_ to_install}
+		\end{figure}
+		\FloatBarrier
+
+\item choose option \textit{Browse my computer for update driver software}
+
+		\begin{figure}[!h] 
+		\centering \includegraphics[width=0.7\textwidth]{Graphic/Installation/install_driver_USB.png}	
+		\caption{Choose manually option}
+		\label{choose_manually_option}
+		\end{figure}
+		\FloatBarrier
+
+\item select folder that contains files driver for \deviceName. Driver files has been installed during software installation. You can find him in program directory (default: \\ \textit{c:/Program Files (x86)/Quartz Monitor/Drivers})
+
+	\begin{figure}[!h] 
+		\centering \includegraphics[width=0.7\textwidth]{Graphic/Installation/select_driver_path.png}	
+		\caption{Select location files driver of USB}
+		\label{select_driver_USB_location}
+		\end{figure}
+		\FloatBarrier
+
+\item confirm location of USB driver files by click \textit{Next}
+
+	\begin{figure}[!h] 
+		\centering \includegraphics[width=0.7\textwidth]{Graphic/Installation/confirm_driver_path.png}	
+		\caption{Confirm driver USB location}
+		\label{confirm_driver_USB_location}
+		\end{figure}
+		\FloatBarrier
+
+
+\item finished
+
+	\begin{figure}[!h] 
+		\centering \includegraphics[width=0.45\textwidth]{Graphic/Installation/install_driver_finished.png}	
+		\caption{Install driver USB finished}
+		\label{install_driver_USB_finished}
+		\end{figure}
+		\FloatBarrier
+
+	\end{enumerate}
+
+\end{enumerate}
+
+\subsection {CHECK COM PORT NUMBER} \label{check_port_com}
+
+	In order to read port COM number which was set automatically by system for \deviceName during connected interface of device to computer you have to open window \textit{Device Manager} (how open \textit{Device Manager} see chapter \textit{3.2.1 USB Driver Installation}) and read from section \textit{Port (COM \& LPT)} number of COM. Number of COM is required to correctly fill communication parameters during configuration device for serial port interface.
+
+	\begin{figure}[!h] 
+	\centering \includegraphics[width=0.67\textwidth]{Graphic/Installation/check_port_number.png}	
+	\caption{Check number port COM}
+	\label{check_number_port_COM}
+	\end{figure}
+	\FloatBarrier
+
+COM port number you find in bracket beside text \textit{USB Serial Port}. From example above you can recognize port as \textbf{COM4}.

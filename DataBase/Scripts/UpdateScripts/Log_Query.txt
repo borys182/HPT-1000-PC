@@ -1,0 +1,334 @@
+;
+You are now connected to database "HE-005" as user "postgres".
+;
+delete from errors_txt;
+DELETE 117
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (15, 16, 16, 2, 'Can''t set setpoint of chamber pressure.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (18, 19, 19, 2, 'Can''t set operate mode of power supply.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (20, 21, 21, 2, 'Can''t set limit current of power supply.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (34, 35, 35, 1, 'Can''t run program because program wasn''t selected.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (22, 23, 23, 2, 'Can''t set max voltage of power supply.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (16, 18, 18, 2, 'Can''t set mode of power supply.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (24, 25, 25, 2, 'Can''t set max current of power supply.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (46, 120, 7, 3, 'Program error. Incorect mode work of power supply.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (49, 123, 7, 3, 'Program error. Flow for MFC1 can''t stabilization beetwen setting range.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (58, 8, 7, 3, 'Range flow work for MFC3 is 0', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (23, 24, 24, 2, 'Can''t set max power of power supply.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (19, 20, 20, 2, 'Can''t set limit power of power supply.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (25, 26, 26, 2, 'Can''t set wait time on operate of power supply.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (29, 30, 30, 2, 'Can''t set time pump of section to SV valve.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (28, 29, 29, 2, 'Can''t set wait time on confiramtion change state of pump.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (27, 28, 28, 2, 'Can''t change state of pump.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (26, 27, 27, 2, 'Can''t set wait time on achive of setpoint by power supply.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (8, 11, 11, 2, 'Can''t set flow.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (9, 8, 8, 2, 'Can''t set max flow.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (30, 31, 31, 2, 'Can''t set cycle time of vaporaizer.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (17, 17, 17, 2, 'Can''t set setpoint of power supply.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (36, 1, 7, 3, 'Can''t execute of program because marker of end doesn''t exist.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (37, 2, 7, 3, 'Can''t start program because door is open.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (39, 109, 7, 3, 'Program error. Limit time for pumping chamber was exceeded.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (21, 22, 22, 2, 'Can''t set limit voltage of power supply', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (38, 3, 7, 3, 'Can''t execute program beacues main power supply is turn off.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (41, 115, 7, 3, 'Program error. Can''t make vent process because fore pump still working.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (40, 110, 7, 3, 'Program error. Fore pump reports error.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (42, 116, 7, 3, 'Program error. Time for confirmation correct state of power supply was exceeded.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (44, 118, 7, 3, 'Program error. Power supply report problem with hardware.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (43, 117, 7, 3, 'Program error. Setpoint of power supply is out of range.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (45, 119, 7, 3, 'Program error. Power of HV exceeded the acceptable range.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (48, 122, 7, 3, 'Program error. Setpoint flow for MFC1 is out of range.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (47, 121, 7, 3, 'Program error. Setpoint limit of power supply can''t be 0.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (51, 125, 7, 3, 'Program error. Flow for MFC2 can''t stabilization beetwen setting range.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (50, 124, 7, 3, 'Program error. Setpoint flow for MFC2 is out of range.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (53, 127, 7, 3, 'Program error. Flow for MFC3 can''t stabilization beetwen setting range.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (52, 126, 7, 3, 'Program error. Setpoint flow for MFC3 is out of range.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (4, 2, 2, 1, 'Call incorect operation.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (5, 6, 6, 1, 'In  PLC doesn''t exist any program.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (7, 37, 37, 1, 'MX Components not installed. Communication with PLC is impossible.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (6, 1, 1, 1, 'Pointer of object is null.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (10, 9, 9, 2, 'Can''t set range of voltage for mass flow controler.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (14, 13, 13, 2, 'Can''t load program to PLC.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (13, 12, 12, 2, 'Can''t make update setings of PLC.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (11, 10, 10, 2, 'Can''t set stabilization time for mass flow controler.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (32, 33, 33, 2, 'Can''t set  state of valve.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (31, 32, 32, 2, 'Can''t set on time of vaporazier.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (33, 34, 34, 2, 'Can''t set mode as pressure for chamber.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (54, 4, 7, 3, 'HV Setpoint is out of range.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (56, 6, 7, 3, 'Range flow work for MFC1 is 0.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (55, 5, 7, 3, 'Range null.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (57, 7, 7, 3, 'Range flow work for MFC2 is 0.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (60, 10, 7, 3, 'HV Error power supply.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (59, 9, 7, 3, 'Hardware error of HV.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (62, 12, 7, 3, 'Error of fore pump.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (61, 11, 7, 3, 'HV error confirm.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (35, 36, 36, 2, 'Can''t set operating mode auto/manual of device.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (2, 3, 3, 1, 'Wrong ID parameters of MFC channel. Can''t return correct data.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (64, 28, 28, 1, 'Can''t set manually state of fore pump in automatic mode', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (63, 19, 19, 1, 'Can''t set manually operate mode of power supply in automatic mode', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (65, 33, 33, 1, 'Can''t set manually state of valve in automatic mode', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (1, 4, 4, 1, 'Can''t set Cycle Time of vaporaizer as less than Time ON.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (3, 5, 5, 1, 'Can''t set Time ON of vaporazier as more than Cycle Time.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (12, 14, 14, 2, 'Can''t start a program.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (66, 15, 15, 2, 'Can''t stop program.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (67, 38, 38, 2, 'Can''t set dosing for vaporazier', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (68, 39, 39, 2, 'Can''t set type of vaporaizer ', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (69, 131, 7, 3, 'Program error. Pressure can''t stabilization beetwen setting range in mode control pressure.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (70, 132, 7, 3, 'Program error. Flow for MFC1 can''t stabilization beetwen setting range in mode control pressure.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (71, 133, 7, 3, 'Program error. Flow for MFC2 can''t stabilization beetwen setting range in mode control pressure.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (72, 134, 7, 3, 'Program error. Flow for MFC3 can''t stabilization beetwen setting range in mode control pressure.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (73, 40, 40, 2, 'Can''t set activity for coresponding  MFC.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (74, 41, 41, 2, 'Can''t set pressure stabilization for PID proceess.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (75, 13, 7, 3, 'Regulator PID reports error. Please check settings PID', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (76, 14, 7, 3, 'Unexpected stop pumping. Emergency stop program, turn off HV, cut off gas', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (78, 16, 7, 3, 'Pressure over limit. Emergency cut off gas', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (77, 15, 7, 3, 'Pressure over limit for safe work of power supply. Emergency turn off HV', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (79, 17, 7, 3, 'Door of chamber isn''t closed. Can''t turn on HV, pumping chamber and gas control', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (81, 19, 7, 3, 'Emergency switch off power supply / cut off gas due to active Vacuum Switch signal', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (80, 18, 7, 3, 'Unexpected turns off main power supply. Program has been stopped.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (82, 20, 7, 3, 'Emergency switch off power suply due to active Cover Protection signal', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (84, 22, 7, 3, 'Emergency stop machine due to active Emergency Stop button', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (83, 21, 7, 3, 'Can''t start process due to active Emergency Stop button', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (85, 23, 7, 3, 'Can''t start leak test process because process is still running', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (86, 24, 7, 3, 'Can''t start process because leak test is still running', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (87, 25, 7, 3, 'Leak test error - fore pump reports problem', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (88, 42, 42, 2, 'Can''t set PID parameters', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (89, 43, 43, 2, 'Can''t set date time of PLC', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (90, 44, 44, 2, 'Can''t start leak test', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (91, 45, 45, 2, 'Can''t clear whole work time of pump', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (92, 46, 46, 2, 'Can''t clear whole work time of machine', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (93, 47, 47, 2, 'Can''t set leak test parameters', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (94, 48, 48, 2, 'Can''t stop leak test', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (95, 49, 49, 2, 'Can''t set state of motor driver', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (96, 111, 7, 3, 'Wrong main supply 3 phase connection', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (97, 135, 7, 3, 'Program error. Fore pump reports problem during attempt stopped her in purge process.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (98, 128, 7, 3, 'Wrong value of cycle or dosing  for vaporizer program.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (99, 26, 7, 3, 'Can''t control fore pump during leak test.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (100, 27, 7, 3, 'Can''t control valves during leak test.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (101, 50, 50, 2, 'Can''t trun ON/OFF  gas controller.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (102, 51, 51, 2, 'Can''t set pressure limit for safe work of power supply.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (103, 52, 52, 2, 'Can''t set pressure limit for gas injection.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (104, 28, 7, 3, 'Thermal switch notice overheating of chamber.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (105, 29, 7, 3, 'Can''t turn ON power supply because Interlock HV is not active.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (106, 136, 7, 3, 'Program error. Can''t make switch on power supply because interlock not active.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (107, 50, 50, 1, 'Can''t turn off MFC flow of channel in automatic mode.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (108, 34, 34, 1, 'Can''t change mode of pressure control  in automatic mode.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (109, 16, 16, 1, 'Can''t change setpoint of pressure in automatic mode.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (110, 53, 53, 2, 'Can''t set factor gauge for gas in chamber.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (111, 54, 54, 2, 'Can''t set type of gas flow by MFC.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (112, 55, 55, 2, 'Can''t set calibrated gas for MFC.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (113, 49, 49, 1, 'Can''t set state of motor driver - wrong address.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (114, 56, 56, 2, 'Can''t set threshold for mix gas protected procedure.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (115, 57, 57, 2, 'Can''t set state of mix gas protected procedure.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (116, 30, 7, 3, 'Emergency cut off gas. Pump purge gas level below safe threshold.', 2);
+INSERT 0 1
+INSERT INTO errors_txt (id, error_code, event_type, event_category, text, id_language) VALUES (117, 58, 58, 2, 'Can''t set stabilization time for flow of gas mix protect procedure.', 2);
+INSERT 0 1
+;
+delete from events_txt;
+DELETE 46
+INSERT INTO events_txt (id, code, text, id_language) VALUES (25, 36, 'Operating mode has been set successfully.', 2);
+INSERT 0 1
+INSERT INTO events_txt (id, code, text, id_language) VALUES (24, 34, 'Mode pressure for device has been changed successfully.', 2);
+INSERT 0 1
+INSERT INTO events_txt (id, code, text, id_language) VALUES (23, 33, 'State of valve has been changed successfully.', 2);
+INSERT 0 1
+INSERT INTO events_txt (id, code, text, id_language) VALUES (21, 31, 'Cycle Time of vaporaizer has been set successfully.', 2);
+INSERT 0 1
+INSERT INTO events_txt (id, code, text, id_language) VALUES (20, 30, 'Time pump of section to SV has been set successfully.', 2);
+INSERT 0 1
+INSERT INTO events_txt (id, code, text, id_language) VALUES (22, 32, 'Time On of vaporaizer has been set successfully.', 2);
+INSERT 0 1
+INSERT INTO events_txt (id, code, text, id_language) VALUES (19, 29, 'Wait time for confirmation change state of fore pump has been set successfully.', 2);
+INSERT 0 1
+INSERT INTO events_txt (id, code, text, id_language) VALUES (18, 28, 'State of fore pump has been changed successfully.', 2);
+INSERT 0 1
+INSERT INTO events_txt (id, code, text, id_language) VALUES (15, 25, 'Max current for power supply has been set successfully.', 2);
+INSERT 0 1
+INSERT INTO events_txt (id, code, text, id_language) VALUES (13, 23, 'Max voltage for power supply has been set successfully.', 2);
+INSERT 0 1
+INSERT INTO events_txt (id, code, text, id_language) VALUES (12, 22, 'Voltage limit for power supply has been set successfully.', 2);
+INSERT 0 1
+INSERT INTO events_txt (id, code, text, id_language) VALUES (10, 20, 'Power limit for power supply has been set successfully.', 2);
+INSERT 0 1
+INSERT INTO events_txt (id, code, text, id_language) VALUES (9, 19, 'Operate state for power supply has been set successfully.', 2);
+INSERT 0 1
+INSERT INTO events_txt (id, code, text, id_language) VALUES (8, 18, 'Working mode for power supply has been set successfully.', 2);
+INSERT 0 1
+INSERT INTO events_txt (id, code, text, id_language) VALUES (7, 17, 'Setpoint for power supply has been set successfully.', 2);
+INSERT 0 1
+INSERT INTO events_txt (id, code, text, id_language) VALUES (6, 16, 'Pressure setpoint has been set successfully.', 2);
+INSERT 0 1
+INSERT INTO events_txt (id, code, text, id_language) VALUES (4, 11, 'Flow for MFC has been set successfully.', 2);
+INSERT 0 1
+INSERT INTO events_txt (id, code, text, id_language) VALUES (3, 10, 'Time flow stability has been set successfully.', 2);
+INSERT 0 1
+INSERT INTO events_txt (id, code, text, id_language) VALUES (2, 9, 'Range voltage for MFC has been set successfully.', 2);
+INSERT 0 1
+INSERT INTO events_txt (id, code, text, id_language) VALUES (1, 8, 'Max flow for MFC has been set successfully.', 2);
+INSERT 0 1
+INSERT INTO events_txt (id, code, text, id_language) VALUES (11, 21, 'Current limit for power supply has been set successfully.', 2);
+INSERT 0 1
+INSERT INTO events_txt (id, code, text, id_language) VALUES (16, 26, 'Wait time on confirmation set operate for power supply has been set successfully.', 2);
+INSERT 0 1
+INSERT INTO events_txt (id, code, text, id_language) VALUES (17, 27, 'Wait time on stabilization setpoint for power supply has been set successfully.', 2);
+INSERT 0 1
+INSERT INTO events_txt (id, code, text, id_language) VALUES (26, 38, 'Dosing value for vaporaizer has been set successfully.', 2);
+INSERT 0 1
+INSERT INTO events_txt (id, code, text, id_language) VALUES (27, 39, 'Type of vaporazier valve has been set successfully.', 2);
+INSERT 0 1
+INSERT INTO events_txt (id, code, text, id_language) VALUES (28, 40, 'Activity corressponding MFC has been set successfully.', 2);
+INSERT 0 1
+INSERT INTO events_txt (id, code, text, id_language) VALUES (29, 41, 'Pressure stabilization time for process PID has been set successfully.', 2);
+INSERT 0 1
+INSERT INTO events_txt (id, code, text, id_language) VALUES (30, 42, 'One of PID parameters has been set successfully.', 2);
+INSERT 0 1
+INSERT INTO events_txt (id, code, text, id_language) VALUES (14, 24, 'Max power for power supply has been set successfully.', 2);
+INSERT 0 1
+INSERT INTO events_txt (id, code, text, id_language) VALUES (5, 12, 'Settings has been read successfully.', 2);
+INSERT 0 1
+INSERT INTO events_txt (id, code, text, id_language) VALUES (38, 50, 'State of gas controller has been set successfullly', 2);
+INSERT 0 1
+INSERT INTO events_txt (id, code, text, id_language) VALUES (31, 43, 'Date time of PLC has been set successfully', 2);
+INSERT 0 1
+INSERT INTO events_txt (id, code, text, id_language) VALUES (39, 51, 'Pressure limit for safe work of power supply has been set successfully', 2);
+INSERT 0 1
+INSERT INTO events_txt (id, code, text, id_language) VALUES (35, 47, 'Leak test parameters has been updated successfully', 2);
+INSERT 0 1
+INSERT INTO events_txt (id, code, text, id_language) VALUES (40, 52, 'Pressure limit for gas injection has been set successfully', 2);
+INSERT 0 1
+INSERT INTO events_txt (id, code, text, id_language) VALUES (36, 48, 'Leak test has been stopped successfully', 2);
+INSERT 0 1
+INSERT INTO events_txt (id, code, text, id_language) VALUES (34, 46, 'Number of process and whole work time of machine has been cleared successfully', 2);
+INSERT 0 1
+INSERT INTO events_txt (id, code, text, id_language) VALUES (33, 45, 'Whole work time of pump has been cleared successfully', 2);
+INSERT 0 1
+INSERT INTO events_txt (id, code, text, id_language) VALUES (32, 44, 'Leak test has been started successfully', 2);
+INSERT 0 1
+INSERT INTO events_txt (id, code, text, id_language) VALUES (37, 49, 'State of motor control has been changed successfully', 2);
+INSERT 0 1
+INSERT INTO events_txt (id, code, text, id_language) VALUES (41, 53, 'Gauge factor for gas in chamber has been set successfully', 2);
+INSERT 0 1
+INSERT INTO events_txt (id, code, text, id_language) VALUES (42, 54, 'Type of gas flow by MFC has been set successfully', 2);
+INSERT 0 1
+INSERT INTO events_txt (id, code, text, id_language) VALUES (43, 55, 'Type of calibrated gas for MFC has been set successfully', 2);
+INSERT 0 1
+INSERT INTO events_txt (id, code, text, id_language) VALUES (44, 56, 'Threshold of mix gas protected procedure has been set successfully', 2);
+INSERT 0 1
+INSERT INTO events_txt (id, code, text, id_language) VALUES (45, 57, 'State of  mix gas protected procedure has been set successfully', 2);
+INSERT 0 1
+INSERT INTO events_txt (id, code, text, id_language) VALUES (46, 58, 'Stabilization time for flow of gas mix protect procedure has been set successfully', 2);
+INSERT 0 1

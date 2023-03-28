@@ -1,0 +1,53 @@
+%\usepackage{polski}
+\usepackage{fontspec}	%pakiet umozliwiajacy uzycie czcionki Cambria
+\setmainfont{Cambria}	%ustawienie głownej czcionki
+\usepackage{unicode-math}
+\usepackage{mempatch}
+\usepackage{memhfixc}
+\usepackage{color,graphicx}
+\usepackage{ifthen}
+\usepackage{imakeidx}
+\makeindex
+\setmathfont{Cambria Math}	%ustawienie czcionki do wyrazen matematycznych
+\usepackage{color}	%pakiet umozliwiajacy uzywanie kolorow
+\usepackage{colortbl}
+\definecolor{gray}{rgb}{0.52,0.52,0.52}	%zdefiniowanie koloru szarego
+\usepackage[left=2.5cm,right=2.5cm,top=2.5cm,footskip=2cm,bottom=2.5cm]{geometry}	%okreselenie rozmiarow marginesow
+\usepackage{overpic}	%pakiet umozliwiajacy nakladanie na siebie obrazkow, tekstu itp. 	
+\usepackage[pagestyles]{titlesec}	%pakiet do formatowania naglowkow, stopek, tytulow sekcji, rozdzialow - rozmiar, wyglad itp.
+\titleformat{\chapter}{\fontsize{24}{28.8}\selectfont\bfseries}{\thechapter}{10pt}{\fontsize{24}{28.8}\selectfont\bfseries}	%formatowanie wygladu nazwy rozdzialu
+\titlespacing{\chapter}{0pt}{0pt}{11pt}	%formatowanie odleglosci miedzy tytulem rozdzialu a tekstem z lewej, gory i dolu
+\titleformat{\section}{\fontsize{16}{19.2}\selectfont\bfseries}{\thesection}{10pt}{\fontsize{16}{19.2}\selectfont\bfseries}	%formatowanie wygladu nazwy sekcji
+
+
+\usepackage{booktabs}
+\usepackage{array}
+\renewcommand{\arraystretch}{1.5}
+\setlength{\tabcolsep}{10pt}
+\newcommand{\centercell}[1]{\multicolumn{1}{|c|}{#1}}
+\usepackage{supertabular}  
+\usepackage[xetex]{hyperref}
+\usepackage{anyfontsize}
+\setcounter{secnumdepth}{3}                                                                             
+\usepackage{makeidx}
+\makeindex
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{tcolorbox}
+\usepackage{ltablex}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{colortbl}
+\tcbuselibrary{skins}
+\usepackage{graphicx}
+\usepackage{colortbl,array}
+\newcolumntype{Y}{>{\raggedleft\arraybackslash}X}
+\newcolumntype{b}{>{\footnotesize}X}
+\newcolumntype{s}{>{\footnotesize\hsize=.3\hsize}X}
+\usepackage[yyyymmdd,hhmmss]{datetime}
+\usepackage{stackengine}
+\usepackage{scalerel}
+\usepackage{xcolor}
+\usepackage{multirow}
+\usepackage{fancyhdr}
+\usepackage{placeins}
+\usepackage{hyperref}

@@ -1,0 +1,552 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B15A41F6-CD06-42ED-85D8-D4D1C7A41855}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HPT1000</RootNamespace>
+    <AssemblyName>Portals</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Portal-software-logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v16.2.Core, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v16.2.Core, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="itextsharp">
+      <HintPath>Library\iTextSharp-PDF\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.pdfa">
+      <HintPath>Library\iTextSharp-PDF\itextsharp.pdfa.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.xtra">
+      <HintPath>Library\iTextSharp-PDF\itextsharp.xtra.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Security">
+      <HintPath>..\..\..\Tools\Npgsql-2.2.3-net45\Mono.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Npgsql">
+      <HintPath>..\..\..\Tools\Npgsql-2.2.3-net45\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GUI\FlowGasPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\FlowGasPanel.Designer.cs">
+      <DependentUpon>FlowGasPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ChamberPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\ChamberPanel.Designer.cs">
+      <DependentUpon>ChamberPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Cotrols\ButtonUpDown.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Cotrols\ButtonUpDown.Designer.cs">
+      <DependentUpon>ButtonUpDown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\LoadDataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\LoadDataForm.Designer.cs">
+      <DependentUpon>LoadDataForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ProcessInformationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ProcessInformationForm.Designer.cs">
+      <DependentUpon>ProcessInformationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ReleaseNote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ReleaseNote.Designer.cs">
+      <DependentUpon>ReleaseNote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\RemoveDataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\RemoveDataForm.Designer.cs">
+      <DependentUpon>RemoveDataForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\SplashScrean.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\SplashScrean.Designer.cs">
+      <DependentUpon>SplashScrean.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Source\Chamber\Gauge.cs" />
+    <Compile Include="Source\Chamber\Maintenance.cs" />
+    <Compile Include="Source\Chamber\MotorDriver.cs" />
+    <Compile Include="Source\Factory.cs" />
+    <Compile Include="GUI\MaintancePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\MaintancePanel.Designer.cs">
+      <DependentUpon>MaintancePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\AdminPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\AdminPanel.Designer.cs">
+      <DependentUpon>AdminPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\AlertsPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\AlertsPanel.Designer.cs">
+      <DependentUpon>AlertsPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ArchivePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\ArchivePanel.Designer.cs">
+      <DependentUpon>ArchivePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Cotrols\DoubleEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Cotrols\DoubleEdit.Designer.cs">
+      <DependentUpon>DoubleEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GraphicalLive.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\GraphicalLive.Designer.cs">
+      <DependentUpon>GraphicalLive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\InterlockPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\InterlockPanel.Designer.cs">
+      <DependentUpon>InterlockPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GeneratorPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\GeneratorPanel.Designer.cs">
+      <DependentUpon>GeneratorPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\MFCPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\MFCPanel.Designer.cs">
+      <DependentUpon>MFCPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\PressurePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\PressurePanel.Designer.cs">
+      <DependentUpon>PressurePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ProgramPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\ProgramPanel.Designer.cs">
+      <DependentUpon>ProgramPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ProgramsConfigPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\ProgramsConfigPanel.Designer.cs">
+      <DependentUpon>ProgramsConfigPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\PumpComponent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\PumpComponent.Designer.cs">
+      <DependentUpon>PumpComponent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\MotorPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\MotorPanel.Designer.cs">
+      <DependentUpon>MotorPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ServicePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\ServicePanel.Designer.cs">
+      <DependentUpon>ServicePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\SettingsPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\SettingsPanel.Designer.cs">
+      <DependentUpon>SettingsPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\UserForm.Designer.cs">
+      <DependentUpon>UserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UserManagerPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UserManagerPanel.Designer.cs">
+      <DependentUpon>UserManagerPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ValvePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\ValvePanel.Designer.cs">
+      <DependentUpon>ValvePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\VaporiserPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\VaporiserPanel.Designer.cs">
+      <DependentUpon>VaporiserPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program\ActDefine.cs" />
+    <Compile Include="GUI\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\MainForm.designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Source\ApplicationData.cs" />
+    <Compile Include="Source\Chamber\Device.cs" />
+    <Compile Include="Source\Chamber\GasTypes.cs" />
+    <Compile Include="Source\Chamber\Interlocks.cs" />
+    <Compile Include="Source\Chamber\Parameter.cs" />
+    <Compile Include="Source\Chamber\PressureControl.cs" />
+    <Compile Include="Source\Chamber\Value.cs" />
+    <Compile Include="Source\Chamber\Vaporizer.cs" />
+    <Compile Include="Source\DB.cs" />
+    <Compile Include="Source\ItemLogger.cs" />
+    <Compile Include="Source\Logger.cs" />
+    <Compile Include="Source\ManageKeybordScreen.cs" />
+    <Compile Include="Source\Message.cs" />
+    <Compile Include="Source\Program\FlushProces.cs" />
+    <Compile Include="Source\Chamber\Chamber.cs" />
+    <Compile Include="Source\Chamber\ChamberObject.cs" />
+    <Compile Include="Source\Chamber\MFC.cs" />
+    <Compile Include="Source\Chamber\ForePump.cs" />
+    <Compile Include="Source\Chamber\PowerSupplay.cs" />
+    <Compile Include="Source\Chamber\Valves.cs" />
+    <Compile Include="Source\Driver\HPT1000.cs" />
+    <Compile Include="Source\Driver\PLC_Mitsubishi.cs" />
+    <Compile Include="Source\Driver\PLC.cs" />
+    <Compile Include="Program\Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Source\Driver\Types.cs" />
+    <Compile Include="Source\Program\GasProces.cs" />
+    <Compile Include="Source\Program\MotorProcess.cs" />
+    <Compile Include="Source\Program\PlasmaProces.cs" />
+    <Compile Include="Source\Program\Program.cs" />
+    <Compile Include="Source\Program\PumpProces.cs" />
+    <Compile Include="Source\Program\ProcesObject.cs" />
+    <Compile Include="Source\Program\Subprogram.cs" />
+    <Compile Include="Source\Program\VentProces.cs" />
+    <Compile Include="Source\ScaleForm.cs" />
+    <Compile Include="Source\Translate.cs" />
+    <Compile Include="Source\User.cs" />
+    <EmbeddedResource Include="GUI\FlowGasPanel.resx">
+      <DependentUpon>FlowGasPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\AdminPanel.resx">
+      <DependentUpon>AdminPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\AlertsPanel.resx">
+      <DependentUpon>AlertsPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ArchivePanel.resx">
+      <DependentUpon>ArchivePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ChamberPanel.resx">
+      <DependentUpon>ChamberPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Cotrols\ButtonUpDown.resx">
+      <DependentUpon>ButtonUpDown.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Cotrols\DoubleEdit.resx">
+      <DependentUpon>DoubleEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GeneratorPanel.resx">
+      <DependentUpon>GeneratorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GraphicalLive.resx">
+      <DependentUpon>GraphicalLive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\InterlockPanel.resx">
+      <DependentUpon>InterlockPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\LoadDataForm.resx">
+      <DependentUpon>LoadDataForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\MaintancePanel.resx">
+      <DependentUpon>MaintancePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\MFCPanel.resx">
+      <DependentUpon>MFCPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\PressurePanel.resx">
+      <DependentUpon>PressurePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ProcessInformationForm.resx">
+      <DependentUpon>ProcessInformationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ProgramPanel.resx">
+      <DependentUpon>ProgramPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ProgramsConfigPanel.resx">
+      <DependentUpon>ProgramsConfigPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\PumpComponent.resx">
+      <DependentUpon>PumpComponent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\MotorPanel.resx">
+      <DependentUpon>MotorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ReleaseNote.resx">
+      <DependentUpon>ReleaseNote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\RemoveDataForm.resx">
+      <DependentUpon>RemoveDataForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ServicePanel.resx">
+      <DependentUpon>ServicePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\SettingsPanel.resx">
+      <DependentUpon>SettingsPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\SplashScrean.resx">
+      <DependentUpon>SplashScrean.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\UserForm.resx">
+      <DependentUpon>UserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\UserManagerPanel.resx">
+      <DependentUpon>UserManagerPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ValvePanel.resx">
+      <DependentUpon>ValvePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\VaporiserPanel.resx">
+      <DependentUpon>VaporiserPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="ActProgTypeLib">
+      <Guid>{CD7846DF-1C99-4BC0-8A8D-FBFB7FC26ACB}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxActProgTypeLib">
+      <Guid>{CD7846DF-1C99-4BC0-8A8D-FBFB7FC26ACB}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Line.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\ForePumpOff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Subprogram.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\ForePumpErr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\ValveClose.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\ValveError.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\ValveOpen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Arrow_Down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Arrow_Up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Corner_Right_Bottom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Corner_Right_Top.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Plasma.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\ForePumpOn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Interlock_Err.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\interlock_OFF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Interlock_ON.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\ChamberPlasma.png" />
+    <None Include="Images\Clear.png" />
+    <None Include="Images\Chamber1.png" />
+    <None Include="Images\Plasma.png" />
+    <None Include="Images\Operate_ON.png" />
+    <None Include="Images\Button_INC.png" />
+    <None Include="Images\Button_DOWN.png" />
+    <None Include="Images\ButtonStart.png" />
+    <None Include="Images\Bistable_OFF.png" />
+    <None Include="Images\Bistable_ON.png" />
+    <None Include="Images\AutomaticMode_ON.png" />
+    <None Include="Images\ButtonStop.png" />
+    <None Include="Images\Bistable_ERR.png" />
+    <None Include="Images\ValveClose_H.png" />
+    <None Include="Images\ValveErrorH.png" />
+    <None Include="Images\ValveOpen_H.png" />
+    <None Include="Images\MotorOFF.png" />
+    <None Include="Images\MotorON.png" />
+    <None Include="Images\MotorERR.png" />
+    <None Include="Images\Add_32x32.png" />
+    <None Include="Images\Cancel_32x32.png" />
+    <None Include="Images\Next_32x32.png" />
+    <None Include="Images\Previous_32x32.png" />
+    <None Include="Images\Save_32x32.png" />
+    <None Include="Images\off.png" />
+    <None Include="Images\on.png" />
+    <None Include="Images\ClearImage\Clear3DLine_32x32.png" />
+    <None Include="Images\ClearChart.png" />
+    <Content Include="Portal-software-logo.ico" />
+    <Content Include="SoftIcone.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

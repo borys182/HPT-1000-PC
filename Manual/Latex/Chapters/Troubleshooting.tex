@@ -1,0 +1,213 @@
+\chapter {TROUBLESHOOTING}
+
+Chapter describe errors of messages. We can find out when and why corresponding error message has been occurred and what is way to solve a problem.
+
+\begin{itemize}
+
+	\item \textit{MX Components not installed. Communication with PLC is impossible.} -  Software package to communication computer panel with PLC hasn't been installed. \\
+ 		Solution:
+	\begin{itemize}
+		\item Install MX Components software
+	\end{itemize}
+
+	\item \textit{Can't set ... any parameters} - Value of parameter ... hasn't been set correctly in PLC \\
+ 		Solution:
+	\begin{itemize}
+		\item Check connection with PLC
+	\end{itemize}
+
+	\item \textit{Can't execute of program because marker of end doesn't exist.} - Program has been wrong loaded to PLC \\
+ 		Solution:
+		\begin{itemize}
+			\item Load program again
+		\end{itemize}
+
+	\item \textit{Can't start program because door is open.} - Until door will be not closed program can't run \\
+ 		Solution:
+		\begin{itemize}
+			\item Close door of chamber
+		\end{itemize}
+
+	\item \textit{Can't execute program beacues main power supply is turn off.} - Until main power supply won't be OK program can't run \\
+ 		Solution: 
+		\begin{itemize}
+			\item Check main power supply
+			\item Check state signal of power supply in PLC
+		\end{itemize}
+
+	\item \textit{Program error. Limit time for pumping chamber was exceeded.} - Too short time for pumping of chamber or too low setpoint of pressure  \\
+ 		Solution:
+		\begin{itemize}
+			\item Increase pump time for pump process
+			\item  Increase setpoint of pressure for pump process
+			\item Check leak of chamber
+		\end{itemize}
+
+	\item \textit{Program error. Fore pump reports error.} -  Confirmation signal worked of fore pump is wrong state\\
+ 		Solution:
+		\begin{itemize}
+			\item Check power supply of fore pump 
+			\item Increase time wait for confirmation work of fore pump  
+			\item Check state signal of confirmation worked of fore pump in PLC
+		\end{itemize}
+
+	\item \textit{Program error. Time for confirmation correct state of power supply was exceeded.} - Confirmation signal worked of fore pump is wrong state.\\
+ 		Solution:
+		\begin{itemize}
+			\item Check power supply of fore pump 
+			\item Increase time wait for confirmation work of fore pump  
+			\item Check state signal of confirmation worked of fore pump in PLC
+		\end{itemize}
+
+	\item \textit{Program error. Setpoint of power supply is out of range.}  - Wrong setpoint of power in process plasma \\
+ 		Solution:
+		\begin{itemize}
+			\item Set setpoint lower than maximum of power
+		\end{itemize}
+
+	\item \textit{Program error. Power supply report problem with hardware.}  - Power supply reports problem with hardware \\
+ 		Solution:
+		\begin{itemize}
+			\item Check signal hardware error connected to PLC 
+			\item Contact with service
+		\end{itemize}
+
+	\item \textit{Program error. Power of HV exceeded the acceptable range.}  - Power supply reports that power  exceeded the acceptable range \\
+ 		Solution:
+		\begin{itemize}
+			\item Decrease  setpoint of power 
+			\item Check limit of power settin in power supply (not PLC)
+		\end{itemize}
+
+	\item \textit{Program error. Setpoint flow for MFC x is out of range.} - Flow setpoint specify in MFC process is too big\\
+ 		Solution:
+		\begin{itemize}
+			\item Decrease flow setpoint
+		\end{itemize}
+
+	\item \textit{Program error. Flow for MFC x can't stabilization beetwen setting range.} - During make a process MFC, system can't stabilize of flow between setting range \\
+ 		Solution:
+		\begin{itemize}
+			\item Check correctly connection gas 
+			\item  Check flow gas
+			\item Change range for process MFC
+		\end{itemize}
+
+	\item \textit{Range flow work for MFCx is 0.} - Gas flowing by MFC has not been selected \\
+ 		Solution:
+		\begin{itemize}
+			\item Select gas for MFC 
+			\item Set maximum flow of MFC on value different than 0
+		\end{itemize}
+
+	\item \textit{Hardware error of HV.}  - Power supply reports error \\
+ 		Solution:
+		\begin{itemize}
+			\item Check power supply 
+			\item Check signal of hardware error connected to PLC 
+			\item Contact with service
+		\end{itemize}
+
+	\item \textit{Error of fore pump.} - Confirmation signal working of fore pump is in wrong statel \\
+ 		Solution:
+		\begin{itemize}
+			\item Check power supply of fore pump  
+			\item Check state signal of confirmation worked of fore pump in PLC
+		\end{itemize}
+
+	\item \textit{Program error. Pressure can't stabilization beetwen setting range in mode control pressure.} - During make a process  \textit{Pressure Control}, system can't stabilize of pressure in setting range \\
+ 		Solution:
+		\begin{itemize}
+			\item Change range of pressure for process \textit{Pressure Control} 
+			\item Check PID parameters
+		\end{itemize}
+
+	\item \textit{Program error. Flow for MFCx can't stabilization beetwen setting range in mode control pressure.} -  During make a process  \textit{Pressure Control}, system can't stabilize of flow in setting range \\
+ 		Solution:
+		\begin{itemize}
+			\item Check correctly  gas connection to MFC 
+			\item Check  flow 
+			\item Increase max deviation of flow
+		\end{itemize}
+
+	\item \textit{Regulator PID reports error. Please check settings PID} - One of parameters of PID have wrong value \\
+ 		Solution:
+		\begin{itemize}
+			 \item Set correctly value of parameters PID
+		\end{itemize}
+
+	\item \textit{Unexpected stop pumping. Emergency stop program, turn off HV, cut off gas} - Because stopped pumping of system, devices of system has been switched off  \\
+ 		Solution:
+		\begin{itemize}
+			\item Check fore pump
+		\end{itemize}
+
+	\item \textit{Can't start process due to active Emergency Stop button} - Until button \textit{Emergency stop} will be pushed I can't run process  \\
+ 		Solution:
+		\begin{itemize}
+			\item Release button \textit{Emergency stop}
+		\end{itemize}
+
+	\item \textit{Can't start leak test process because process is still running}  - Until process won't be finished I can't run leak test\\
+ 		Solution:
+		\begin{itemize}
+			\item Wait on finished of process
+		\end{itemize}
+
+	\item \textit{Can't start process because leak test is still running} - Until leak test won't be finished I can't run process\\
+ 		Solution:
+		\begin{itemize}
+			\item Wait on finished of leak test
+		\end{itemize}
+	
+	\item \textit{Leak test error - fore pump reports problem} - During executing a procedure leak test forme pump reported error \\
+ 		Solution:
+		\begin{itemize}
+			\item Check fore pump 
+			\item Check power supply of for pump
+		\end{itemize}
+
+	\item \textit{Wrong main supply 3 phase connection} - Power supply of system is wrong connection \\
+ 		Solution:
+		\begin{itemize}
+			 \item Connect correctly power supply to system 
+			\item Check state of signal \textit{3 Phases} connected to PLC
+		\end{itemize}
+	
+	\item \textit{Wrong value of cycle or dosing  for vaporizer program.} - Parameters of vaporaiser program are wrong  \\
+ 		Solution:
+		\begin{itemize}
+			\item Check \textit{Time ON} is lower  than \textit{Cycle time} 
+		\end{itemize}
+
+	\item \textit{Thermal switch notice overheating of chamber.} - Thermal signal reports overheating of chamber \\
+ 		Solution:
+		\begin{itemize}
+			\item Check temperature of chamber 
+			\item Check state of power supply
+		\end{itemize}
+
+	\item \textit{Can't turn ON power supply because Interlock HV is not active.} - State HV on power supply cannot be set because condition of environment are dangerous for power supply  \\
+ 		Solution:
+		\begin{itemize}
+			\item Check pressure in chamber (should be lower than limit of HV)
+			\item Check is chamber is overheating 
+			\item Check vacuum switch signal
+		\end{itemize}
+
+	\item \textit{Program error. Can't make switch on power supply because interlock not active.} - State HV on power supply cannot be set because condition of environment are dangerous for power supply  \\
+ 		Solution:
+		\begin{itemize}
+			\item Check pressure in chamber (should be lower than limit of HV)
+			\item Check is chamber is overheating 
+			\item Check vacuum switch signal
+		\end{itemize}
+
+	\item \textit{Emergency cut off gas. Pump purge gas level below safe threshold.} - Safety procedure of chamber against dangerous mixture of gases emergency cut of gases  \\
+ 		Solution:
+		\begin{itemize}
+			\item Check parameters of safety procedure
+		\end{itemize}
+
+\end{itemize}
+

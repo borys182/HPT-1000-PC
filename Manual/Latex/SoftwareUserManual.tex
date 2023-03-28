@@ -1,0 +1,23 @@
+\documentclass[a4paper,11pt,twoside]{report}	%okreslenie klasy dokumentu i jego parametrow: rozmiar papieru, rozmiar czcionki, dwustronny 
+\input{Config/Document_Usepackage.tex}
+
+%!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+%To change the version of the manual go to file below (DocumentSettings.tex)
+%!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+\input{Config/Document_Settings.tex}
+
+\begin{document} 
+
+	\input{Main_page.tex}
+	\input{Config/Document_Prepare.tex}
+	
+	\tableofcontents	%wstawienie spisu tresci
+	\listoftables		%wstawienie spisu tabel
+	\listoffigures		%wstawienie spisu obrazkow
+	\input{Config/HeaderFooter.tex}	
+		
+	\input{TableOfContents.tex}
+
+ \printindex
+	
+\end{document}
